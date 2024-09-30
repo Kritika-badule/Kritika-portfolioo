@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Portfolio Webpage Example</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo"></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+<!--         <a href="#" class="logo" id="logo2">Ultra <span>Code</span></a> -->
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Kritika Badule</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>A passionate frontend developer with a love for creating innovative solutions that solve real-world problems. My expertise lies in Java, Python, Spring Boot, and MySQL, with experience building both desktop and web applications. I’m also proficient in front-end technologies such as HTML, CSS, and JavaScript.</p>
+            <button class="btn">Download CV</button>
+        </div>
+
+        <div class="social-media-icon">
+            <a href="https://www.linkedin.com/in/kritika-badule-054646252/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Kritika-badule" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <div class="home-img">
+            <img src="https://assets.onecompiler.app/42t24tuw4/42tpvq62z/image1.jpg" alt="My Image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I’m Kritika Badule, currently pursuing B.Tech in Artificial Intelligence Engineering from Priyadarshini J.L. College of Engineering, Nagpur. As a fresher, I have developed strong skills in Java full-stack development, including HTML, CSS, JavaScript, Bootstrap, and Spring Boot for building responsive web applications. My back-end skills include Java, JPA, JDBC, and MySQL.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>SQL & MySQL</li>
+            <li>JDBC & Hibernate</li>
+            <li>HTML/CSS/JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Email Spam Detection</h3>
+            <p>Email spam detection system is used to detect email spam using a Machine Learning technique called Natural Language Processing and Python.</p>
+            <button onclick="viewDetails('Email Spam Detection')">View Details</button>
+        </div>
+        <div class="project">
+            <h3>Project 2: Employee Management</h3>
+            <p>Employee Management System using Java programming language, Java Swing for creating the graphical user interface (GUI), and MYSQL as the database management system.</p>
+            <button onclick="viewDetails('Employee Management')">View Details</button>
+        </div>
+        <div class="project">
+            <h3>Project 3: Library Management</h3>
+            <p>The Library Management System project implemented using Python GUI provides a user-friendly interface for managing library tasks efficiently.</p>
+            <button onclick="viewDetails('Library Management')">View Details</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Query" rows="5" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Kritika<span>Badule</span> | All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      function viewDetails(projectName) {
+        alert('Details about ' + projectName + ' will be displayed here.');
+      }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

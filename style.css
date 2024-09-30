@@ -1,0 +1,297 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0; /* Light grey background for body */
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #333; /* Dark grey */
+    color: #fff;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+#logo2 span {
+    color: #f39c12; /* Light orange */
+}
+
+/* Navbar */
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f39c12; /* Light orange on hover */
+}
+
+#menu-icon {
+    display: none;
+}
+
+/* Home Section */
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Blue to Purple gradient */
+    color: #fff;
+}
+
+.home-content h3,
+.home-content h1,
+.home-content h3 span {
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.home-content h3 span {
+    color: #ffe56b; /* Light yellow */
+}
+
+.home-content p {
+    margin: 15px 0;
+    max-width: 600px;
+    text-align: justify;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.home-content .btn {
+    background-color: #ffe56b; /* Light yellow */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-content .btn:hover {
+    background-color: #fff; /* White background on hover */
+    color: #ffe56b\; /* Light yellow text on hover */
+}
+
+
+/* Section Colors */
+#about {
+    background-color: #cce5ff; /* Light Blue */
+    padding: 60px 20px;
+}
+
+#skills {
+    background-color: #fff3cd; /* Light Yellow */
+    padding: 60px 20px;
+}
+
+#projects {
+    background-color: #d4edda; /* Light Green */
+    padding: 60px 20px;
+}
+
+/* 
+/* Contact Section */
+#contact {
+    background: linear-gradient(to right, #a8e6cf, #dcedc1); /* Light teal to light grey gradient */
+    padding: 60px 20px;
+    color: #333; /* Dark text for contrast */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0; /* Light grey background for inputs */
+}
+
+form input[type="submit"] {
+    background-color: #333; /* Dark grey */
+    color: #fff;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #a8e6cf; /* Light teal on hover */
+    color: #333; /* Dark text on hover */
+}
+
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Social Icons */
+.social-media-icon {
+    margin-top: 20px;
+}
+
+.social-media-icon a {
+    margin-right: 20px;
+    color: #fff;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.social-media-icon a:hover {
+    color: #f39c12; /* Light orange on hover */
+}
+
+/* Home Image */
+.home-img img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+/* About, Skills, Projects, and Contact */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333; /* Dark text for section headings */
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333; /* Dark text for section text */
+}
+
+section ul {
+    list-style: none;
+}
+
+section ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Project Styles */
+.project {
+    margin-bottom: 30px;
+}
+
+.project button {
+    padding: 10px 20px;
+    background-color: #f39c12; /* Light orange */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project button:hover {
+    background-color: #333; /* Dark grey on hover */
+    color: #fff;
+}
+
+/* Contact Form */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+form input[type="submit"] {
+    background-color: #333; /* Dark grey */
+    color: #fff;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #f39c12; /* Light orange on hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Dark grey */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-text span {
+    color: #f39c12; /* Light orange */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: inline-block;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333; /* Dark grey */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-img img {
+        margin-top: 20px;
+    }
+}
